@@ -47,9 +47,8 @@ Secure-Segmented-Network/
     ├── http_test.png
     └── port_security.png
 
-## 👥 Authors
-- Shreelakshmi Prabhu (NNM24CB053)
-- Prithvik K S (NNM25CB504)
-
-**Guide:** S Shyam Kumar, Assistant Professor
-**Institution:** NMAM Institute of Technology, Nitte — 2025-26
+## 👥 Team
+| Name | Role |
+|------|------|
+| Shreelakshmi Prabhu | Network Design, VLAN & Routing Configuration, Repository Management |
+| Prithvik K S | Security Implementation (ACL, SSH, Port Security, Server Setup) |
