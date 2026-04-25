@@ -33,7 +33,7 @@ access control through Extended ACLs, SSH v2, and Layer 2 Port Security.
 - ✅ Web and Database servers accessible to authorized users only
 
 ## 📁 Repository Structure
-Secure-Segmented-Network/
+VLAN-Segmentation-ACL-Security/
 ├── VLAN_Segmentation_ACL_Security.pdf   # Full project report
 ├── VLAN_Segmentation_ACL_Security.pkt   # Cisco Packet Tracer file
 ├── configs/
