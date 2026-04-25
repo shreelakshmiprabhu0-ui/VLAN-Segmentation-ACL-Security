@@ -1,0 +1,77 @@
+! Project: Secure Network Segmentation
+! Author: Shreelakshmi Prabhu , Prithvik K S
+
+
+
+! ================================
+! SWITCH CONFIGURATION
+! ================================
+
+enable
+configure terminal
+
+! ================================
+! 🔹 VLAN CREATION
+! ================================
+
+vlan 10
+ name STAFF
+ exit
+
+vlan 20
+ name GUEST
+ exit
+
+vlan 30
+ name ADMIN
+ exit
+
+vlan 40
+ name SERVER
+ exit
+
+! ================================
+! 🔹 ACCESS PORT ASSIGNMENT
+! ================================
+
+interface range fa0/1-2
+ switchport mode access
+ switchport access vlan 10
+ exit
+
+interface fa0/3
+ switchport mode access
+ switchport access vlan 20
+ exit
+
+interface fa0/4
+ switchport mode access
+ switchport access vlan 30
+ exit
+
+interface range fa0/5-6
+ switchport mode access
+ switchport access vlan 40
+ exit
+
+! ================================
+! 🔹 TRUNK CONFIGURATION
+! ================================
+
+interface fa0/24
+ switchport mode trunk
+ exit
+
+! ================================
+! 🔒 PORT SECURITY
+! ================================
+
+interface range fa0/1-6
+ switchport mode access
+ switchport port-security
+ switchport port-security maximum 1
+ switchport port-security mac-address sticky
+ switchport port-security violation shutdown
+ exit
+
+end
