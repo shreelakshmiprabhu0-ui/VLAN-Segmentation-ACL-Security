@@ -4,6 +4,9 @@ Designed and implemented a secure segmented LAN using Cisco Packet Tracer,
 isolating Staff, Guest, Admin, and Server zones using VLANs and enforcing
 access control through Extended ACLs, SSH v2, and Layer 2 Port Security.
 
+## 🧠 Network Topology
+![Network Topology](screenshots/network_topology.png)
+
 ## 🗂️ VLAN Design
 | VLAN ID | Department | Network         | Gateway       |
 |---------|------------|-----------------|---------------|
